@@ -1,0 +1,31 @@
+header#menubar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100vw;
+    height: 4em;
+
+    background-color: @base03;
+    color: @base2;
+
+    h1 {
+        flex: 1;
+        margin: 0 0 0 1em;
+    }
+
+    nav {
+        flex: 0;
+        ul {
+            color: @fg;
+            display: flex;
+            overflow: hidden;
+
+            list-style-type: none;
+            li {
+                margin: 0 1rem;
+                text-align: center;
+                // background-color: @red;
+            }
+        }
+    }
+}

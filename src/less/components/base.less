@@ -1,0 +1,40 @@
+@import "./color.less";
+body {
+    margin: 0;
+    background-color: @bg;
+    color: @fg;
+    font-size: xx-large;
+}
+
+a {
+    color: @blue;
+}
+
+button {
+    background-color: inherit;
+    border: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+#main {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+body footer {
+    @footerheight: 2em;
+
+    position: fixed;
+    width: 100%;
+    height: @footerheight;
+    background-color: @hl;
+    bottom: 0;
+    .copyright {
+        display: block;
+        text-align: center;
+        line-height: @footerheight;
+        height: 100%;
+        width: 100%;
+    }
+}
